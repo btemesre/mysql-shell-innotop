@@ -7,7 +7,7 @@ How to use it:
 --------------
 
 ```
- mysqlsh --py root@localhost
+ mysqlsh --py root@localhost           <<<--- connect to the X console otherwise the global classes won't be found: root@localhost:33060
 
  import sys
  sys.path.append('/home/fred/workspace/mysql-shell-innotop')
