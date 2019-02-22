@@ -12,9 +12,9 @@ def topbar(curses, stdscr, info):
     curses.init_pair(2, curses.COLOR_CYAN, -1)
     curses.init_pair(3, curses.COLOR_GREEN, -1)
     curses.init_pair(4, curses.COLOR_RED, -1)
-    curses.init_pair(10, 166, curses.COLOR_WHITE)
+    curses.init_pair(10, curses.COLOR_BLACK, curses.COLOR_WHITE)
     curses.init_pair(11, curses.COLOR_BLUE, curses.COLOR_WHITE)
-    curses.init_pair(12, 23, curses.COLOR_WHITE)
+    curses.init_pair(12, curses.COLOR_RED, curses.COLOR_WHITE)
 
     time = datetime.now()
     y,x = stdscr.getmaxyx()
@@ -37,9 +37,9 @@ def setup(curses, session):
     curses.init_pair(2, curses.COLOR_CYAN, -1)
     curses.init_pair(3, curses.COLOR_GREEN, -1)
     curses.init_pair(4, curses.COLOR_RED, -1)
-    curses.init_pair(10, 166, curses.COLOR_WHITE)
+    curses.init_pair(10, curses.COLOR_BLACK, curses.COLOR_WHITE)
     curses.init_pair(11, curses.COLOR_BLUE, curses.COLOR_WHITE)
-    curses.init_pair(12, 23, curses.COLOR_WHITE)
+    curses.init_pair(12, curses.COLOR_RED, curses.COLOR_WHITE)
 
     curses.noecho()
     curses.cbreak()
